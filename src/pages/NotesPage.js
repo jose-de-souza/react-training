@@ -6,8 +6,8 @@ const NotesPage = () => {
   return (
     <>
       {
-        notes.map(note => (
-            <ListItem note={note}/>
+        notes.map((note, index ) => (
+            <ListItem key={index} note={note}/>
         ))
       }
     </>
